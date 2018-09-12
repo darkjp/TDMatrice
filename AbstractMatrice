@@ -2,19 +2,20 @@ public abstract class Matrice<T> implements IMatrice {
     private int ligne, colonne;
     private T type
 	
-	public Matrice<T> (int ligne, int colonne, Matrice<T>) {
+	public Matrice<T> (int ligne, int colonne, Matrice<T> m) {
 		this.ligne = ligne; 
 		this.colonne = colonne;
 		
-		if (type instanceof int) 
+		if (m instanceof int) 
 			this.type = (int) 0;
  
-		if (type instanceof String) 
+		if (m instanceof String) 
 			this.type = (String) "";
 
-		if (type instanceof Point) 
+		if (m instanceof Point) 
 		    this.type = new Point(0,0);
 	}
+	
 	
 	
 	public abstract getLigne();
