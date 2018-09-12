@@ -2,7 +2,7 @@ public abstract class Matrice<T> implements IMatrice {
     private int ligne, colonne;
     private T type
 	
-	public Matrice<T> (int ligne, int colonne, Object o) {
+	public Matrice<T> (int ligne, int colonne, T t) {
 		this.ligne = ligne; 
 		this.colonne = colonne;
 		this.type = t;
