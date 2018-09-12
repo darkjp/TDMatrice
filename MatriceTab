@@ -1,9 +1,10 @@
 public class MatriceTab implements IMatrice extends AbstractMatrice {
     
-    public MatriceTab(int ligne, int colonne, Matrice<T> type) {
+    public MatriceTab(int ligne, int colonne, T type) {
         super(ligne, colonne, type);
     }
 
 }
+
 
 
