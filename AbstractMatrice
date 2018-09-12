@@ -7,14 +7,15 @@ public abstract class Matrice<T> implements IMatrice {
 		this.colonne = colonne;
 		
 		if (o instanceof int) 
-			this.type = (int) 0;
+			this.type = new Integer(o);
  
 		if (o instanceof String) 
-			this.type = (String) "";
+			this.type = new String(o);
 
 		if (o instanceof Point) 
-		    this.type = new Point(0,0);
+		    this.type = new Point(o);
 	}
+
 	
 	
 	
