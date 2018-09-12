@@ -1,0 +1,8 @@
+public class MatriceTab implements IMatrice extends AbstractMatrice {
+    
+    public MatriceTab(int ligne, int colonne, Object o) {
+        super(ligne, colonne, o);
+    }
+}
+
+

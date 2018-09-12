@@ -1,0 +1,6 @@
+public interface iMatrice {
+	public int getLignes(Matrice m);
+	public getColonnes(Matrice m);
+	public getIndice(Matrice m, int ligneI, int colonneJ);
+	public setIndice(Matrice m, int ligneI, int colonneJ);
+}

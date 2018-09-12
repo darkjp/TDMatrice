@@ -1,0 +1,34 @@
+public abstract class Matrice implements IMatrice {
+    private int ligne, colonne;
+	
+	public Matrice(int ligne, int colonne, Object o) {
+		this.ligne = ligne; 
+		this.colonne = colonne;
+		
+		if (o instanceof int) 
+			this.o = (int) 0;
+ 
+		if (o instanceof String) 
+			this.o = (String) "";
+
+		if (o instanceof Point) 
+		    this.o = new Point(0,0);
+	}
+	
+	
+	public abstract getLigne();
+	
+	public abstract getColonne();
+	
+	public String ToString (Matrice m) {
+		for (int i = 0; i < m.getLigne(); ++i) {
+			for (int j = 0; j < m.getColonne(); ++j) {
+			    if (j = m.getColonne())
+			         system.out.println("E" + m.getIndice(m, i, j) + " ");
+				else 
+				    system.out("E" + m.getIndice(m, i, j));
+			}
+		}
+	}
+	
+}
