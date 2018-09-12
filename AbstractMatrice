@@ -6,7 +6,8 @@ public abstract class Matrice<T> implements IMatrice {
 		this.ligne = ligne; 
 		this.colonne = colonne;
 		this.type = t;
-		/*
+		
+		/* old version
 		if (o instanceof int) 
 			this.type = new Integer(o);
  
@@ -15,7 +16,7 @@ public abstract class Matrice<T> implements IMatrice {
 
 		if (o instanceof Point) 
 		    this.type = new Point(o);
-		 */
+		*/
 	}
 
 	
