@@ -25,22 +25,21 @@ public abstract class AbstractMatrice<T> implements IMatrice<T> {
 		return mValue = t;
 	}
 
-	public String strResult() {
+	public StringBuilder strResult() {
 		StringBuilder strResult = new StringBuilder();
 		for (int i = 0; i < getLigne(); ++i) {
 			for (int j = 0; j < getColonne(); ++j) {
 				if (j == getColonne())
 					strResult.append("E" + ReadIndice(i, j) + " \n");
 				else
-					strResult.append("E" + ReadIndice(i, j));
+					strResult.append("E" + ((StringBuilder) ReadIndice(i, j)).append(" "));
 			}
 		}
-		return strResult.toString();
+		return strResult;
 	}
 
-	public String toString(String s) {
-		return s;
-
+	public String toString(StringBuilder strBuff) {
+		return strResult().toString();
 	}
 
 }
