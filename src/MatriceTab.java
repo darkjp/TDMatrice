@@ -1,7 +1,7 @@
+public class MatriceTab<T> extends AbstractMatrice<T> {
 
-public class MatriceTab<T> {
-        private T value;
-        public MatriceTab<T>(int ligne, int colonne, T value) {
-        super(ligne, colonne, value);
-    }
+	public MatriceTab(int ligne, int colonne, T t) {
+		super(ligne, colonne, t);
+	}
+
 }
